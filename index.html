@@ -5,10 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saloev Sadi</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Kelly+Slab|Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/loader.css">
 </head>
 <body>
+  <div class="loader" role="loader">
+    <div class="load">
+      <span class="load__text animated infinite pulse">
+        saloev sadi
+      </span>
+    </div>
+  </div>
+
   <header>
     <div class="centering">
       <nav class="main__nav">
@@ -32,22 +41,173 @@
         <section class="greeting">
           <h2 class="greeting__title">hello</h2>
           <p class="greeting__text">
-          i'm saloev sa'di<br>
+          i'm saloev sadi<br>
           junor frontend developer
           </p>
         </section>
       </nav>
     </div>
   </header>
+
   <main>
     <h1 class="visually-hidden">Saloev Sadi personal web site</h1>
     <div class="centering">
       <section class="about">
         <h2 class="about__title">About</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat tenetur, natus? Tempora sit, sapiente porro est, animi totam enim quos tempore, quaerat nulla maxime minima recusandae facilis vel voluptas id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ex blanditiis eius sapiente praesentium assumenda impedit tempore aut! Nisi praesentium fugit doloremque, impedit delectus eos debitis. Nulla dolorum aspernatur cum.</p>
+        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat tenetur, natus? Tempora sit, sapiente porro est, animi totam enim quos tempore, quaerat nulla maxime minima recusandae facilis vel voluptas id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ex blanditiis eius sapiente praesentium assumenda impedit tempore aut! Nisi praesentium fugit doloremque, impedit delectus eos debitis. Nulla dolorum aspernatur cum.</p>
       </section>
+
+      <section class="portfolio">
+        <h2 class="portfolio__title">portfolio</h2>
+        <ul class="portfolio__list">
+          <li class="portfolio__item">
+            <a href="https://www.npmjs.com/package/ss-brain-games" class="portfolio__item-link"  target="_blank">
+              <img src="img/projects/brain__games-1.png" alt="project brain games" class="portfolio__img">
+              <div class="image__mask" role="extraimageinfo">
+                <h3 class="mask__title">brain-games</h3>
+                <p class="mask__info">A set of brain-games launched from the console</p>
+              </div>
+            </a>
+        </li>
+        <li class="portfolio__item">
+          <a href="https://appnote-12c8c.firebaseapp.com/auth.html" class="portfolio__item-link"  target="_blank">
+             <img src="img/projects/note__project-1.png" alt="make note app" class="portfolio__img">
+            <div class="image__mask" role="extraimageinfo">
+              <h3 class="mask__title">note app</h3>
+              <p class="mask__info">Applications that allow you to create notes</p>
+            </div>
+          </a>
+        </li>
+        <li class="portfolio__item">
+          <a href="https://github.com/saloev/Cuda" class="portfolio__item-link"  target="_blank">
+            <img src="img/projects/cuda.png" alt="landing page" class="portfolio__img">
+            <div class="image__mask">
+              <h3 class="mask__title">HTML/CSS</h3 role="extraimageinfo">
+              <p class="mask__info">psd template converted to HTML/CSS</p>
+            </div>
+          </a>
+        </li>
+        <li class="portfolio__item">
+          <a href="https://github.com/saloev/toDoList" class="portfolio__item-link"  target="_blank">
+            <img src="img/projects/todo__list-2.png" alt="simple todo list app" class="portfolio__img">
+            <div class="image__mask"  role="extraimageinfo">
+              <h3 class="mask__title">ToDo list</h3>
+              <p class="mask__info">Simple applications for  creating to do list</p>
+            </div>
+          </a>
+        </li>
+        </ul>
+      </section>
+
+      <section class="skills">
+        <h2 class="skills__title">skills</h2>
+        <section class="main__skills">
+          <h3 class="main__skills__title">main skills</h3>
+          <ul class="main__skills__list">
+          <li class="main__skills-item">
+              Algorithms and Data Structures
+          </li>
+          <li class="main__skills-item">
+            javascript
+          </li>
+          <li class="main__skills-item">
+            html/css
+          </li>
+          <li class="main__skills-item">
+            bash
+          </li>
+          <li class="main__skills-item">
+            git
+          </li>
+          <li class="main__skills-item">
+            c++
+          </li>
+        </ul>
+        </section>
+       
+        <section class="soft__skills">
+          <h3 class="soft__skills__title">Soft Skills</h3>
+          <ul class="soft__skills__list">
+            <li class="soft__skils__item">
+            Flexibility
+          </li>
+            <li class="soft__skils__item">
+            Integrity
+          </li>
+            <li class="soft__skils__item">
+            Teamwork
+          </li>
+            <li class="soft__skils__item">
+            Responsibility
+          </li>
+            <li class="soft__skils__item">
+            Positive attitude
+          </li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="contact">
+        <h2 class="contact__title">contacts</h2>
+        <div class="contact__wrapper">
+        <address class="contact__address">
+          Saloev Sadi<br/>
+          Torzhkovskaya Ulitsa, 197343<br/>
+          Sankt-Peterburg<br/>
+          Russia<br/>
+          +79602337850<br/>
+          Email: <a href="mailto:saloev.saadi@yandex.ru" class="contact__mail">saloev.saadi@yandex.ru</a><br/>
+        </address>
+
+         <form action="" method="POST" class="conctact__form">
+           <fieldset>
+            <legend>Write me</legend>
+            <p class="form__field">
+              <input type="text" name="fullname" id="fullname" placeholder="Sadi Saloev" autocomplete="true" required>
+              <label for="fullname">Name</label>
+            </p>
+            <p class="form__field">
+              <input type="email" name="email" id="email" placeholder="kazakon2@mail.ru" autocomplete="true" required>
+              <label for="email">Email</label>
+            </p>
+            <p class="form__field">
+              <textarea id="subject" name="subject" placeholder="When you are going to die ?" autocomplete="true" required></textarea>
+              <label for="subject">Subject</label>
+            </p>
+            <input type="submit" value="Submit" class="form__submit">
+          </fieldset>
+        </form>
+
+        <ul class="contact__social">
+          <li>
+            <a href="https://www.facebook.com/sadi.saloev">
+              <span class="">Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/sadisaloev">
+              <span class="">Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://vk.com/s.saloev">
+              <span class="">Vk</span>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <a href="https://github.com/saloev">
+          <img src="img/media/GitHub-Mark.png" alt="github logo">
+        </a>
+      </footer>
   </div>
   </main>
   
+  <script src="scripts/index.js"></script>
+  <script src="scripts/scroll.js"></script>
+  <script src="scripts/loader.js"></script>
 </body>
 </html>

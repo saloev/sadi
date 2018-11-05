@@ -1,0 +1,11 @@
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s linear all;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
