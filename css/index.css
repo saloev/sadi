@@ -214,10 +214,6 @@ header {
   justify-content: space-between;
 }
 
-/*.portfolio__item {
- 
-}*/
-
 .portfolio__item-link {
   max-width: 40%;
   margin-bottom: 40px;
@@ -272,12 +268,12 @@ header {
 }
 
 .mask__info {
-  margin-bottom: 20px;
+  margin-top: 40px;
 
-  -webkit-transform: translate(250px, -145px) rotate(-45deg);
-  -ms-transform: translate(250px, -145px) rotate(-45deg);
-  -o-transform: translate(250px, -145px) rotate(-45deg);
-  transform: translate(250px, -145px) rotate(-45deg); 
+  -webkit-transform: translate(0px, 150px);
+  -ms-transform: translate(0px, 150px);
+  -o-transform: translate(0px, 150px);
+  transform: translate(0px, 150px); 
 
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -309,10 +305,10 @@ header {
 
 .portfolio__item-link:focus .mask__info, 
 .portfolio__item-link:hover .mask__info {
-  -webkit-transform: translate(0px, 0px) rotate(0deg);
-  -ms-transform: translate(0px, 0px) rotate(0deg);
-  -o-transform: translate(0px, 0px) rotate(0deg);
-  transform: translate(0px, 0px) rotate(0deg);
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
 }
 
 .skills {

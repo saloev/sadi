@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/scroll.css">
+  <link rel="stylesheet" href="css/toUp.css">
   <link rel="stylesheet" href="css/loader.css">
 </head>
 <body>
@@ -17,6 +19,13 @@
       </span>
     </div>
   </div>
+
+  <button class="up_button" title="Go to top">
+    <div class="btn__loader-1"></div>
+    <div class="btn__loader-2"></div>
+    <div class="btn__arrow">&#x2191;</div>
+  <span class="visually-hidden">Go to top Button</span>
+</button>
 
   <header>
     <div class="centering">
@@ -167,7 +176,7 @@
               <label for="fullname">Name</label>
             </p>
             <p class="form__field">
-              <input type="email" name="email" id="email" placeholder="kazakon2@mail.ru" autocomplete="true" required>
+              <input type="email" name="email" id="email" placeholder="saloev.saadi@yandex.ru" autocomplete="true" required>
               <label for="email">Email</label>
             </p>
             <p class="form__field">
@@ -207,7 +216,9 @@
   </main>
   
   <script src="scripts/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
   <script src="scripts/scroll.js"></script>
+  <script src="scripts/toUp.js"></script>
   <script src="scripts/loader.js"></script>
 </body>
 </html>
