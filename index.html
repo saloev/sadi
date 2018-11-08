@@ -3,55 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saloev Sadi</title>
+  <title>Saloev Saadi</title>
   <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/scroll.css">
-  <link rel="stylesheet" href="css/toUp.css">
   <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/sentMessageStatus.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
 </head>
 <body>
-  <div class="loader" role="loader">
+  <div class="loader">
     <div class="load">
       <span class="load__text animated infinite pulse">
-        saloev sadi
+        saloev saadi
       </span>
     </div>
   </div>
 
-  <button class="up_button" title="Go to top">
-    <div class="btn__loader-1"></div>
-    <div class="btn__loader-2"></div>
-    <div class="btn__arrow">&#x2191;</div>
-  <span class="visually-hidden">Go to top Button</span>
-</button>
-
   <header>
     <div class="centering">
-      <nav class="main__nav">
-        <ul class="nav">
-          <li class="nav__item">
-            <a href="" class="nav__item-link">main</a>
-          </li>
-          <li class="nav__item">
-            <a href="" class="nav__item-link">about</a>
-          </li>
-          <li class="nav__item">
-            <a href="" class="nav__item-link">portfolio</a>
-          </li>
-          <li class="nav__item">
-            <a href="" class="nav__item-link">skills</a>
-          </li>
-          <li class="nav__item">
-            <a href="" class="nav__item-link">contacts</a>
-          </li>
-        </ul>
+      <nav class="main__nav" id="main__nav">
+        <div class="main__nav__wrapper">
+          <ul class="nav">
+            <li class="nav__item">
+              <a href="#main__nav" class="nav__item-link">main</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__item-link">about</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__item-link">portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__item-link">skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__item-link">contacts</a>
+            </li>
+            <li class="nav__item ">
+              <a class="nav__item-link nav__for-phones icon">
+                <i class="fa fa-bars"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
         <section class="greeting">
-          <h2 class="greeting__title">hello</h2>
+          <h2 class="greeting__title visually-hidden">hello</h2>
           <p class="greeting__text">
-          i'm saloev sadi<br>
-          junor frontend developer
+          saloev sadi<br>
+          junior frontend developer
           </p>
         </section>
       </nav>
@@ -59,20 +63,31 @@
   </header>
 
   <main>
-    <h1 class="visually-hidden">Saloev Sadi personal web site</h1>
+    <h1 class="visually-hidden">Saloev Saadi personal web site</h1>
     <div class="centering">
-      <section class="about">
+      <section class="about" id="about">
         <h2 class="about__title">About</h2>
-        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat tenetur, natus? Tempora sit, sapiente porro est, animi totam enim quos tempore, quaerat nulla maxime minima recusandae facilis vel voluptas id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ex blanditiis eius sapiente praesentium assumenda impedit tempore aut! Nisi praesentium fugit doloremque, impedit delectus eos debitis. Nulla dolorum aspernatur cum.</p>
+        <p class="about__text">
+          My name is Saloev Saadi. I was born and grew up in Dushanbe, Tajikistan. Currently I am completing my fourth year of education in St. Petersburg Electrotechnical University (<a target="_blank" href="http://www.eltech.ru/en/university/">ETU ‘LETI’</a>) one of the outstanding technical university of Russian Federation.
+        </p>
+        <p class="about__text">
+         I started to get interest in web development in early school years, gradually web development attracted me more and more. Eventually i decided to learn it more professionally and started my bachelor in web development. After in depth learning of web development I started to like frontend development. Working with frontend development gives me pleasure- the best work is the work you like.
+        </p>
+        <p class="about__text">
+          An interesting feature for me of front-end development is that the result of my work has been always visible to me and others, I can always demonstrate everything I have learned and achieved.
+        </p>
+        <p class="about__text">
+          Now I’m learning more about computer science, algorithms and data structures and of course more about my favorite programing language - JavaScript
+        </p>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <h2 class="portfolio__title">portfolio</h2>
         <ul class="portfolio__list">
           <li class="portfolio__item">
             <a href="https://www.npmjs.com/package/ss-brain-games" class="portfolio__item-link"  target="_blank">
               <img src="img/projects/brain__games-1.png" alt="project brain games" class="portfolio__img">
-              <div class="image__mask" role="extraimageinfo">
+              <div class="image__mask">
                 <h3 class="mask__title">brain-games</h3>
                 <p class="mask__info">A set of brain-games launched from the console</p>
               </div>
@@ -81,7 +96,7 @@
         <li class="portfolio__item">
           <a href="https://appnote-12c8c.firebaseapp.com/auth.html" class="portfolio__item-link"  target="_blank">
              <img src="img/projects/note__project-1.png" alt="make note app" class="portfolio__img">
-            <div class="image__mask" role="extraimageinfo">
+            <div class="image__mask">
               <h3 class="mask__title">note app</h3>
               <p class="mask__info">Applications that allow you to create notes</p>
             </div>
@@ -91,7 +106,7 @@
           <a href="https://github.com/saloev/Cuda" class="portfolio__item-link"  target="_blank">
             <img src="img/projects/cuda.png" alt="landing page" class="portfolio__img">
             <div class="image__mask">
-              <h3 class="mask__title">HTML/CSS</h3 role="extraimageinfo">
+              <h3 class="mask__title">HTML/CSS</h3>
               <p class="mask__info">psd template converted to HTML/CSS</p>
             </div>
           </a>
@@ -99,7 +114,7 @@
         <li class="portfolio__item">
           <a href="https://github.com/saloev/toDoList" class="portfolio__item-link"  target="_blank">
             <img src="img/projects/todo__list-2.png" alt="simple todo list app" class="portfolio__img">
-            <div class="image__mask"  role="extraimageinfo">
+            <div class="image__mask">
               <h3 class="mask__title">ToDo list</h3>
               <p class="mask__info">Simple applications for  creating to do list</p>
             </div>
@@ -108,7 +123,7 @@
         </ul>
       </section>
 
-      <section class="skills">
+      <section class="skills" id="skills">
         <h2 class="skills__title">skills</h2>
         <section class="main__skills">
           <h3 class="main__skills__title">main skills</h3>
@@ -135,7 +150,7 @@
         </section>
        
         <section class="soft__skills">
-          <h3 class="soft__skills__title">Soft Skills</h3>
+          <h3 class="soft__skills__title">Addition Skills</h3>
           <ul class="soft__skills__list">
             <li class="soft__skils__item">
             Flexibility
@@ -156,7 +171,7 @@
         </section>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2 class="contact__title">contacts</h2>
         <div class="contact__wrapper">
         <address class="contact__address">
@@ -168,23 +183,24 @@
           Email: <a href="mailto:saloev.saadi@yandex.ru" class="contact__mail">saloev.saadi@yandex.ru</a><br/>
         </address>
 
-         <form action="" method="POST" class="conctact__form">
+         <form action="scripts/index.js" method="POST" class="conctact__form">
            <fieldset>
             <legend>Write me</legend>
             <p class="form__field">
-              <input type="text" name="fullname" id="fullname" placeholder="Sadi Saloev" autocomplete="true" required>
+              <input type="text" name="fullname" id="fullname" placeholder="Sadi Saloev" autocomplete="on" required>
               <label for="fullname">Name</label>
             </p>
             <p class="form__field">
-              <input type="email" name="email" id="email" placeholder="saloev.saadi@yandex.ru" autocomplete="true" required>
+              <input type="email" name="email" id="email" placeholder="saloev.saadi@yandex.ru" autocomplete="on" required>
               <label for="email">Email</label>
             </p>
             <p class="form__field">
-              <textarea id="subject" name="subject" placeholder="When you are going to die ?" autocomplete="true" required></textarea>
+              <textarea id="subject" name="subject" placeholder="When you are going to die ?" required></textarea>
               <label for="subject">Subject</label>
             </p>
             <input type="submit" value="Submit" class="form__submit">
           </fieldset>
+          <div class="form__status__message hidden"></div>
         </form>
 
         <ul class="contact__social">
@@ -214,11 +230,12 @@
       </footer>
   </div>
   </main>
-  
-  <script src="scripts/index.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
-  <script src="scripts/scroll.js"></script>
-  <script src="scripts/toUp.js"></script>
+
   <script src="scripts/loader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+  <script src="scripts/lib/elevator.min.js"></script>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/scroll.js"></script>
+  <script src="scripts/menu.js"></script>
 </body>
 </html>

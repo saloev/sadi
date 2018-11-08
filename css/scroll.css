@@ -9,3 +9,17 @@
   visibility: visible;
   opacity: 1;
 }
+
+.hide__menu {
+  background: #fff;
+  color: #000;
+}
+
+.hide__menu ul li a {
+  color: #000;
+}
+
+.hide__menu ul li a:hover,
+.hide__menu ul li a:focus {
+  border: 2px dotted #000;
+}
